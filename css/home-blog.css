@@ -1,0 +1,9 @@
+.content {
+  grid-area: main;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px auto 0;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}

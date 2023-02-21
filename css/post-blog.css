@@ -1,0 +1,40 @@
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  grid-template-areas:
+    "mc mc mc mc"
+    "sd sd sd sd"
+    "cb cb cb cb"
+  ;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.main-content {
+  grid-area: mc;
+}
+
+.sidebar {
+  grid-area: sd;
+  text-align: center;
+}
+
+.commentary-box {
+  grid-area: cb;
+}
+
+@media (min-width: 600px) {
+  .post-container {
+    grid-template-areas:
+      "mc mc mc sd"
+      "mc mc mc sd"
+      "cb cb cb sd"
+    ;
+    grid-gap: 20px;
+  }
+
+  .sidebar {
+    border-left: 1px solid var(--main-type-lighter-color);
+    padding-left: 20px;
+  }
+}
